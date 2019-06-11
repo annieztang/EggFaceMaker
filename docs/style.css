@@ -1,0 +1,72 @@
+/*
+  Name: Annie Tang
+  Date: April 19, 2019
+  Section: CSE 154 AM
+
+  This is the style.css page for CP2. It gives its pages a cute, uniform feel.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+   font-family: 'Nunito', sans-serif;
+   background-color: #dde9ff;
+   text-align: center;
+}
+
+main {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h1 {
+   font-size: 30pt;
+   background-color: #eaf1ff;
+   padding: 5px;
+}
+
+article {
+   background-color: #ccddff;
+   border: solid white 10px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 25px;
+   padding-top: 45px;
+   padding-bottom: 45px;
+}
+
+#egg-view img, #face-view img, button {
+   cursor: pointer;
+}
+
+img {
+   width: 150px;
+   height: 100%;
+}
+
+#rating img {
+   width: 18px;
+   height: 100%;
+}
+
+.hidden {
+   display: none;
+}
+
+button, select {
+   width: 75px;
+   height: 50px;
+   background-color: white;
+   border: none;
+   border-radius: 0.25em;
+   font-family: 'Nunito', sans-serif;
+   font-size: 16pt;
+}
+
+#main-btn {
+   width: fit-content;
+   padding: 0px 10px 0px 10px;
+}

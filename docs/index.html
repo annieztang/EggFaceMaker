@@ -1,0 +1,78 @@
+<!--
+  Name: Annie Tang
+  Date: April 19, 2019
+  Section: CSE 154 AM
+
+  This is the index.html page for CP2. This page allows you to customize an egg face, and then rate
+  the egg you created.
+  Louis -- This page does not work the exact way I want it to, because I could not figure out for
+           the life of me of why my if/else statements in finalEgg() would not work. However, I
+           think it still hits the requirements which is why I'm leaving it like this. Thanks for
+           understanding! It's a silly website.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Egg Face Maker</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="main.js"></script>
+      <link rel="icon" href="img/sunny_egg.png">
+   </head>
+
+   <body>
+      <header>
+         <h1>Make an Egg!</h1>
+      </header>
+
+      <main>
+         <section id="egg-view">
+            <h2>Choose an Egg</h2>
+            <article>
+               <img id="plain" src="img/plain_egg.png" alt="normal egg">
+               <img id="sunny" src="img/sunny_egg.png" alt="sunny side up egg">
+               <img id="crack" src="img/cracked_egg.png" alt="cracked egg">
+            </article>
+         </section>
+
+         <section id="face-view" class="hidden">
+            <h2>Choose a Face</h2>
+            <article>
+               <img id="cute" src="img/cute_face.png" alt="cute face">
+               <img id="sad" src="img/sad_face.png" alt="sunny side up egg">
+               <img id="heart" src="img/heart_face.png" alt="cracked egg">
+            </article>
+         </section>
+
+         <section id="result-view" class="hidden">
+            <h2>Congrats! Here is your egg face!</h2>
+            <article>
+               <img id="final" src="img/plain_egg.png" alt="final egg">
+            </article>
+            <button id="next" type="button">Next</button>
+         </section>
+
+         <section id="rate-view" class="hidden">
+            <h2>Rate your egg out of 5 eggs!</h2>
+            <article>
+               <select id="rating">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+            </article>
+            <article id="rate-result"></article>
+            <button id="main-btn">Make Another Egg!</button>
+         </section>
+      </main>
+
+      <footer>
+         <p>&copy;2019 Annie Tang</p>
+      </footer>
+
+   </body>
+</html>
